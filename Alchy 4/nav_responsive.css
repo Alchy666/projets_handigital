@@ -1,0 +1,188 @@
+@media only screen and (max-width: 1440px) {
+    /* hide classic menu */
+    
+    #topnav_menu {
+      display: none;
+    }
+
+    .logo img{
+      display: none;
+    }
+
+    .download{
+      display: none;
+    }
+
+    hr{
+      display: none;
+    }
+
+    .topnav{
+      background-color: #333;
+      height: 10vh;
+      width: 100%;
+      min-height: 60px;
+      z-index: 1000;
+    }
+
+    .topnav li{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  
+    /* position home link at left and hamburger at right */
+    #home_link {
+      display: none;
+    }
+  
+    /* disable horizontal scrolling  */
+    #root {
+      position: relative;
+      overflow-x: hidden;
+    }
+  
+    /* show responsive menu and position at the right of the screen */
+    #topnav_responsive_menu {
+      display: block;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+  
+      z-index: 99;
+  
+      transform-origin: 0% 0%;
+      transform: translate(-200%, 0);
+  
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+  
+    #topnav_responsive_menu ul {
+      display: flex;
+      flex-direction: column;
+  
+      position: absolute;
+      margin: 0;
+      top: 0;
+  
+      min-width: 50vw;
+      height: 100vh;
+      padding: 56px 0 0;
+  
+      text-align: center;
+  
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+    }
+  
+    #topnav_responsive_menu li {
+      padding: 12px 24px;
+    }
+  
+    #topnav_responsive_menu a {
+      white-space: nowrap;
+      color: #333;
+      text-decoration: none;
+    }
+  
+    /* And let's slide it in from the right */
+    #topnav_responsive_menu.open {
+      transform: none;
+      position: fixed;
+    }
+  
+    /* ******************** HAMBURGER ICON ******************** */
+    /* define size and position of the hamburger link */
+    #topnav_hamburger_icon {
+      display: block;
+      position: relative;
+      margin: 30px 16px 16px 16px;
+      width: 33px;
+      height: 28px;
+      z-index: 100;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      
+    }
+  
+    /* define the style (size, color, position, animation, ...) of the 3 spans */
+    #topnav_hamburger_icon span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      margin-top: 40px;
+  
+      background: #ededed;
+      border-radius: 3px;
+  
+      z-index: 100;
+  
+      opacity: 1;
+      left: 0;
+  
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+  
+    /* set the 3 spans position to look like a hamburger */
+    #topnav_hamburger_icon span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left top;
+      -moz-transform-origin: left top;
+      -o-transform-origin: left top;
+      transform-origin: left top;
+    }
+    #topnav_hamburger_icon span:nth-child(2) {
+      top: 12px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+    #topnav_hamburger_icon span:nth-child(3) {
+      top: 24px;
+      -webkit-transform-origin: left bottom;
+      -moz-transform-origin: left bottom;
+      -o-transform-origin: left bottom;
+      transform-origin: left bottom;
+    }
+  
+    /* change color when opening the menu */
+    #topnav_hamburger_icon.open span {
+      background: #333;
+    }
+  
+    /* the first span rotates 45° \ */
+    #topnav_hamburger_icon.open span:nth-child(1) {
+      width: 110%;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+    /* the second span disappears */
+    #topnav_hamburger_icon.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+  
+    /* the last span rotates -45° / */
+    #topnav_hamburger_icon.open span:nth-child(3) {
+      width: 110%;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }

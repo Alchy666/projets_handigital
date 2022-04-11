@@ -1,0 +1,365 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* ---------------------------- Hidden connection !!!! */
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    animation: mymove 5s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes mymove {
+  50% {box-shadow: 10px 10px 10px rgb(0, 0, 0);}
+}
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: underline overline #000000;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #31c24c;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: context-menu;
+  }
+
+  .openbtn:hover {
+    cursor: context-menu;
+  }
+  
+  
+/* ---------------------------- Hidden connection FIN !!!! */
+
+
+/* ---------------------------- CAROUSEL !!!! */
+
+@media only screen and (max-width: 1440px){
+
+    .openbtn {
+        position: absolute;
+        right: 0px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #333333;
+        color: #333333;
+        padding: 10px 15px;
+        border: none;
+        cursor: context-menu;
+      }
+
+    .sidepanel  {
+        width: 0;
+        position: fixed;
+        z-index: 10000000;
+        height: 60px;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        animation: mymove 5s;
+        animation-fill-mode: backwards;
+    }
+
+    .sidepanel a {
+        padding-top: 13px;
+    }
+
+    .carousel{
+        margin: auto;
+    }
+
+    .carousel-item img{
+        flex: 1;
+        height: 100%;
+        margin: auto;
+        min-width: 800px;
+    }
+
+
+}
+
+
+.carousel0{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.carousel{
+    height: 100vh;
+    width: 70vw;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+
+}
+
+h1{
+    color: #333
+}
+
+h2{
+    font-family: Tahoma;
+    color: #333;
+    font-weight: 700;
+    font-size: 2.5rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+.carousel-inner{
+    height: 100%;
+    /* min-width: 400%; */
+    display: flex;
+    transition: all ease .5s;
+}
+
+.carousel-item{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.carousel-item img{
+    flex: 1;
+    height: auto;
+    width: 100%;
+}
+
+
+.carousel-item h1{
+    opacity: .5;
+}
+
+.carousel-controls .prev{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('prev.svg');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.carousel-controls .next{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('next.svg');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.prev:hover, .next:hover{
+    opacity: 1;
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.carousel-indicators span{
+    display: inline-block;
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    opacity: .5;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.carousel-indicators span.active{
+    opacity: 1;
+}
+
+/* ---------------------------- CAROUSEL FIN !!!! */
+
+/* ---------------------------- I AM !!!! */
+
+
+
+.iam{
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    padding-left: 28%;
+    padding-bottom: 8%;
+}
+
+.iam p{
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 1440px){
+    .iam{
+        height: 300px;
+        width: auto;
+        margin: 10%;
+        padding-left: 3%;
+        padding-bottom: 8%;
+    }
+}
+
+/* ---------------------------- GALLERIE !!!! */
+
+#titremp{
+    margin-left: 25%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: right;
+    margin-left: 10%;
+  }
+
+@media only screen and (max-width: 1440px){
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        justify-content: center;
+        margin-left: 0%;
+      }     
+
+      #titremp{
+        margin-left: 0%;
+      }
+}
+
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* ---------------------------- PROJETS !!!! */
+#titrep{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 1440px){
+
+    #titrep{
+      margin-left: 0%;
+    }
+}
+
+.projets{
+    display: flex;
+    margin-left: 25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.projet{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
+
+.projet p{
+  height: 300px;
+  width: auto;
+}
+/* ---------------------------- FOOTER !!!! */
+
+footer{
+    font-size: 13px;
+    color: #333;
+}

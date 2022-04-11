@@ -1,0 +1,86 @@
+/* ******************** NAV BAR ******************** */
+
+#root{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logo{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  z-index: 10;
+  margin-top: 50px;
+  margin-left: 10vh;
+}
+
+.logo img{
+  margin: auto;
+  height: 70px;
+  width: auto;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 25vw;
+  padding-left: 5%;
+  position: fixed;
+  background: white;
+}
+.topnav_link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 12px;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100px;
+}
+.topnav_link:hover {
+  transition-duration: 0.5s;
+  margin-left: 10px;
+  color: #31c24c;
+  
+}
+
+.download{
+  display: flex;
+  align-items: center;
+  border: solid 2px #333;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 18%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.download:hover{
+  transition-duration: 0.5s;
+  background-color: #31c24c;
+  color: #fff;
+}
+
+
+.download svg{
+  display: flex;
+  padding: 10px;
+}
+
+
+.download p{
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* hide responsive menu */
+#topnav_hamburger_icon,
+#topnav_responsive_menu {
+  display: none;
+}
