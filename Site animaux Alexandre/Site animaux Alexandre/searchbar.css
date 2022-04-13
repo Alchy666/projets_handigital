@@ -1,0 +1,84 @@
+.search-bg{
+    padding: 60px 0px 60px 0px;
+    background-color: black;
+    width: 1029px;
+}
+
+.search{
+    display: block;
+    height: 100px;
+    width: 300px;
+}
+
+
+/*  --------------- LISTE SEARCH -----------------  */
+
+
+
+#myInput {
+    box-sizing: border-box;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-left: 7px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #myUL li{
+    display: flex;
+    text-align: left;
+    height: 200px;
+    width: 500px;
+    margin: 7px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+  #myUL li a {
+    width: 70px;
+    border: 1px solid #ddd;
+
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #myUL li p{
+    height: 175px;
+    width: 190px;
+    border: 1px solid #ddd;
+    margin-top: 0;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+
+  #myUL li img{
+    height: 200px;
+    width: 200px;
+}
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+  

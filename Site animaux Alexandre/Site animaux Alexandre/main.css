@@ -1,0 +1,121 @@
+@font-face{
+    font-family: "Inkfree";
+    src: url(font/Inkfree.ttf);
+
+}
+@font-face{
+    font-family: "LiberationMono";
+    src: url(font/LiberationMono.ttf);
+}
+
+@font-face{
+    font-family: "impact";
+    src: url(font/impact.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+/* ----------------------------NAV*/
+nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    width: 1029px;
+}
+
+nav p{
+    color: #fff;
+    font-size: 30px;
+    font-family: "Inkfree";
+    padding-left: 50px;
+}
+
+/* ----------------------------HOME*/
+section{
+    margin: auto;
+    width: 1029px;
+}
+
+
+.bg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/background-meuh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 1029px;
+    }
+
+.fond-box-texte{
+    padding: 20px;
+    opacity: 50%;
+    background-color: black;
+    height: 260px;
+    width: 300px;
+    margin: 20px;
+}
+
+.box-texte{
+    color: #fff;
+    font-family: "LiberationMono";
+}
+
+/* ----------------------------HOME END*/
+/* ----------------------------BOX1*/
+
+.meuh-joueuse{
+    display: flex;
+    margin-top: 150px;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+}
+
+.meuh-joueuse img{
+   height: 300px;
+}
+
+.meuh-joueuse p{
+    padding: 60px 50px 40px 50px;
+ 
+    color: rgb(255, 255, 255);
+    font-family: "LiberationMono";
+ }
+ /* ----------------------------BOX1 END*/
+ /* ----------------------------BOX2*/
+
+ .ameuh{
+     display: block;
+     justify-content: center;
+     align-items: center;
+     height: 600px;
+     width: 100%;
+     font-family: impact;
+     font-size: 30px;
+     text-align: center;
+ }
+
+ .ameuh p{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    height: 150px;
+    width: 100%;
+    font-family: impact;
+    font-size: 30px;
+    text-align: center;
+}
+ 
