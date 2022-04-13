@@ -1,0 +1,32 @@
+.espece{
+    width: 15vw;
+    color:blueviolet;
+}
+
+.groupe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    margin-top: 20px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mapage{
+    display: none;
+}
+
+.bonjour {
+    color: white;
+}
+
+.deco {
+    display: none;
+    color: white;
+}
